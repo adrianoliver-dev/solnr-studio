@@ -5,3 +5,7 @@ export { EditorialStrip } from "./EditorialStrip";
 export { ProductCard } from "./ProductCard";
 export { ProductGrid } from "./ProductGrid";
 export { CartDrawer } from "./CartDrawer";
+export { CatalogFilters } from "./CatalogFilters";
+export { CatalogFiltersMobile } from "./CatalogFiltersMobile";
+export { CatalogGrid } from "./CatalogGrid";
+export { CatalogGridClient } from "./CatalogGridClient";

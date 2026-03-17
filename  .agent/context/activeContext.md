@@ -12,7 +12,6 @@
 - [x] Design System primitives (B1)
 - [x] Storefront Layout (B2): Navbar, Footer, Route Grouping
 - [x] Homepage Complete (B3): Composed all B3 sections
-- [x] Maintenance (B3): Migrated to motion/react for React 19 compatibility
 - [x] Centralized Product Data (B4): `lib/data/products.ts` with 12 static items
 - [x] Catalog Browsing (B4): Responsive grid with staggered animations
 - [x] Dynamic Filtering (B4): URL-based category and sorting system
