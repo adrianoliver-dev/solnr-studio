@@ -1,0 +1,57 @@
+STDOUT:
+
+> solnr-studio@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.13
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 5.6s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/19) ...
+   Generating static pages (4/19) 
+   Generating static pages (9/19) 
+   Generating static pages (14/19) 
+ ✓ Generating static pages (19/19)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      174 B         102 kB
+├ ○ /_not-found                            993 B         103 kB
+├ ○ /about                                 174 B         102 kB
+├ ○ /account                               174 B         102 kB
+├ ○ /account/orders                        174 B         102 kB
+├ ○ /account/wishlist                      174 B         102 kB
+├ ○ /admin                                 174 B         102 kB
+├ ○ /admin/content                         174 B         102 kB
+├ ○ /admin/inventory                       174 B         102 kB
+├ ○ /admin/orders                          174 B         102 kB
+├ ƒ /admin/orders/[id]                     174 B         102 kB
+├ ○ /admin/products                        174 B         102 kB
+├ ƒ /admin/products/[id]                   174 B         102 kB
+├ ○ /admin/products/new                    174 B         102 kB
+├ ƒ /api/webhooks/order-created            174 B         102 kB
+├ ○ /catalog                               174 B         102 kB
+├ ○ /legal/privacy                         174 B         102 kB
+├ ○ /legal/terms                           174 B         102 kB
+├ ƒ /products/[slug]                       174 B         102 kB
+├ ○ /stories                               174 B         102 kB
+└ ƒ /stories/[slug]                        174 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-3991756713d22f05.js         46 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+
+STDERR:
+
+
+ERROR:
+null
