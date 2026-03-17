@@ -12,3 +12,5 @@ export { CatalogGridClient } from "./CatalogGridClient";
 export { PDPGallery } from "./PDPGallery";
 export { PDPInfo } from "./PDPInfo";
 export { StoryCard } from "./StoryCard";
+export { FadeInSection } from "./FadeInSection";
+

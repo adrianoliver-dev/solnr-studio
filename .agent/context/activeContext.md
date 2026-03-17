@@ -2,10 +2,10 @@
 
 ## Current State
 - **Date:** 2026-03-17
-- **Current Block:** B6 — Stories / Editorial
+- **Current Block:** B7 — About Page
 - **Block Status:** DONE
-- **Phase:** B1-B6 100% complete. Editorial section with article renderer fully implemented.
-- **Next Action:** /startblock B7_CART_AND_CHECKOUT (Note: Previous next action was B6, now moving to next logical block)
+- **Phase:** B1-B7 100% complete. Editorial brand story page fully implemented.
+- **Next Action:** /startblock B8_CART_AND_CHECKOUT
 
 ## What Was Completed (B0-B4)
 - [x] Initial setup and project configuration (B0)
@@ -20,6 +20,7 @@
 - [x] Homepage Sync (B4): Updated homepage grid to use centralized data
 - [x] Stories Editorial (B6): Static stories, list page, and custom article renderer
 - [x] B6 Fixes (B6): Functional Navbar mobile menu overlay and clickable featured story card with hover effects
+- [x] About Page (B7): Editorial brand story with scroll animations
 
 ## Open Issues
 None.
@@ -34,6 +35,7 @@ None.
 | B4 | Catalog Page | DONE | 2026-03-17 |
 | B5 | Product Detail Pages | DONE | 2026-03-17 |
 | B6 | Stories / Editorial | DONE | 2026-03-17 |
+| B7 | About Page | DONE | 2026-03-17 |
 
 ## Repo & Infrastructure
 - GitHub: https://github.com/adrianoliver-dev/solnr-studio
