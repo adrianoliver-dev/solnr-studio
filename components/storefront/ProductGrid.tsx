@@ -1,0 +1,2 @@
+// Placeholder
+export default function ProductGrid() { return null; }
