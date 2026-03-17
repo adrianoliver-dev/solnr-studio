@@ -25,6 +25,8 @@
 - [x] EditorialStrip (B3): Full-width brand statement with quote.
 - [x] Composition (B3): Fully composed homepage in app/(storefront)/page.tsx.
 - [x] Dependency Fix (B3): Migrated to motion/react for React 19 compatibility.
+- [x] Maintenance (B3): Removed duplicate framer-motion, pinned motion to 12.38.0.
+- [x] Patterns: Added P-12 to systemPatterns.md regarding motion/react.
 
 ## Open Issues
 None.
