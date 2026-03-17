@@ -24,47 +24,49 @@ export default function StoriesPage() {
 
       {/* Featured Story */}
       <section className="container mx-auto px-6 pb-16 lg:px-12">
-        <div className="grid grid-cols-1 overflow-hidden md:grid-cols-2">
-          {/* Image */}
-          <div className="relative aspect-[16/9] md:aspect-auto">
-            <Image
-              src={featuredStory.coverImage}
-              alt={featuredStory.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          
-          {/* Content Panel */}
-          <div className="flex flex-col justify-center bg-[--color-surface] p-10 md:p-16 lg:p-20">
-            <div className="flex gap-4 font-mono text-[10px] uppercase tracking-widest text-[--color-accent]">
-              <span>{featuredStory.category}</span>
-              <span className="text-[--color-text-muted]">/</span>
-              <span>{featuredStory.readTime}</span>
+        <Link 
+          href={`/stories/${featuredStory.slug}`}
+          className="group block border border-[--color-border] overflow-hidden"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            {/* Image */}
+            <div className="relative aspect-[16/9] md:aspect-auto overflow-hidden">
+              <Image
+                src={featuredStory.coverImage}
+                alt={featuredStory.title}
+                fill
+                className="object-cover transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             
-            <h2 className="mt-4 font-display text-3xl font-normal leading-tight text-[--color-text-primary] md:text-4xl lg:text-5xl">
-              {featuredStory.title}
-            </h2>
-            
-            <p className="mt-4 font-sans text-base leading-relaxed text-[--color-text-secondary]">
-              {featuredStory.subtitle}
-            </p>
-            
-            <span className="mt-6 font-mono text-[10px] text-[--color-text-muted]">
-              {featuredStory.date}
-            </span>
-            
-            <Link 
-              href={`/stories/${featuredStory.slug}`}
-              className="mt-8 inline-flex items-center text-[10px] uppercase tracking-[0.2em] text-[--color-accent] transition-opacity hover:opacity-70"
-            >
-              Read Story →
-            </Link>
+            {/* Content Panel */}
+            <div className="flex flex-col justify-center bg-[--color-surface] p-10 md:p-16 lg:p-20">
+              <div className="flex gap-4 font-mono text-[10px] uppercase tracking-widest text-[--color-accent]">
+                <span>{featuredStory.category}</span>
+                <span className="text-[--color-text-muted]">/</span>
+                <span>{featuredStory.readTime}</span>
+              </div>
+              
+              <h2 className="mt-4 font-display text-3xl font-normal leading-tight text-[--color-text-primary] transition-colors duration-200 group-hover:text-[--color-text-secondary] md:text-4xl lg:text-5xl">
+                {featuredStory.title}
+              </h2>
+              
+              <p className="mt-4 font-sans text-base leading-relaxed text-[--color-text-secondary]">
+                {featuredStory.subtitle}
+              </p>
+              
+              <span className="mt-6 font-mono text-[10px] text-[--color-text-muted]">
+                {featuredStory.date}
+              </span>
+              
+              <div className="mt-8 inline-flex items-center text-[10px] uppercase tracking-[0.2em] text-[--color-accent] transition-opacity group-hover:opacity-70 pointer-events-none">
+                Read Story →
+              </div>
+            </div>
           </div>
-        </div>
+        </Link>
       </section>
 
       {/* Stories Grid */}

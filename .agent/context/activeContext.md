@@ -18,6 +18,8 @@
 - [x] Dynamic Filtering (B4): URL-based category and sorting system
 - [x] Mobile Filter Drawer (B4): Bottom sheet with `motion/react`
 - [x] Homepage Sync (B4): Updated homepage grid to use centralized data
+- [x] Stories Editorial (B6): Static stories, list page, and custom article renderer
+- [x] B6 Fixes (B6): Functional Navbar mobile menu overlay and clickable featured story card with hover effects
 
 ## Open Issues
 None.
