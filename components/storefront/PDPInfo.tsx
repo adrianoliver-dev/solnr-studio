@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { StaticProduct } from '@/lib/data/products';
 import Heading from '@/components/ui/Heading';
