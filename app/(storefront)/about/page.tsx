@@ -31,7 +31,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <span className="font-mono text-[10px] uppercase tracking-widest text-[--color-text-muted]">
-                  Santa Cruz, Bolivia
+                  Austin, TX
                 </span>
               </div>
             </div>

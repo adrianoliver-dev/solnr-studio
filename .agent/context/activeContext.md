@@ -21,6 +21,8 @@
 - [x] Stories Editorial (B6): Static stories, list page, and custom article renderer
 - [x] B6 Fixes (B6): Functional Navbar mobile menu overlay and clickable featured story card with hover effects
 - [x] About Page (B7): Editorial brand story with scroll animations
+- [x] Maintenance: Restored corrupted agent memory files (`project-context.md`, `systemPatterns.md`)
+- [x] Maintenance: Corrected brand location in About page ("Austin, TX")
 
 ## Open Issues
 None.
