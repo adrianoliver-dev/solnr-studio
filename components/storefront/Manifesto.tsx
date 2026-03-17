@@ -1,6 +1,6 @@
-import * as m from "framer-motion/m";
+import * as m from "motion/react-m";
 
-export default function Manifesto() {
+export function Manifesto() {
   return (
     <section className="bg-[--color-surface] px-6 py-24 lg:px-12 lg:py-40">
       <div className="container mx-auto flex max-w-4xl flex-col items-center text-center space-y-12">

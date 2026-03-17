@@ -1,7 +1,7 @@
 import Image from "next/image";
-import * as m from "framer-motion/m";
+import * as m from "motion/react-m";
 
-export default function Hero() {
+export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden bg-[--color-base] pt-20">
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:px-12">
@@ -17,7 +17,7 @@ export default function Hero() {
           </span>
           <h1 className="max-w-xl font-display text-4xl font-normal leading-tight tracking-tight text-[--color-text-primary] md:text-5xl lg:text-7xl">
             The Art of Intentional <br /> Presence
-          </h1>
+            </h1>
           <p className="max-w-md text-sm leading-relaxed text-[--color-text-secondary] lg:text-base">
             Silhouettes that speak through silence. Discover our latest series of 
             refined staples designed for the modern collector.

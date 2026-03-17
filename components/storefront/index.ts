@@ -1,6 +1,7 @@
-export { default as Hero } from "./Hero";
-export { default as Manifesto } from "./Manifesto";
-export { default as ProductCard } from "./ProductCard";
-export { default as ProductGrid } from "./ProductGrid";
-export { default as FeaturedCapsules } from "./FeaturedCapsules";
-export { default as CartDrawer } from "./CartDrawer";
+export { Hero } from "./Hero";
+export { Manifesto } from "./Manifesto";
+export { FeaturedCapsules } from "./FeaturedCapsules";
+export { EditorialStrip } from "./EditorialStrip";
+export { ProductCard } from "./ProductCard";
+export { ProductGrid } from "./ProductGrid";
+export { CartDrawer } from "./CartDrawer";

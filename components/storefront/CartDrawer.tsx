@@ -1,2 +1,1 @@
-// Placeholder
-export default function CartDrawer() { return null; }
+export function CartDrawer() { return null; }
