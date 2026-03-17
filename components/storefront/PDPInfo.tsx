@@ -1,10 +1,9 @@
-'use client';
-
 import { useState } from 'react';
 import { StaticProduct } from '@/lib/data/products';
 import Heading from '@/components/ui/Heading';
 import Button from '@/components/ui/Button';
 import { cn } from '@/lib/utils/cn';
+import { useCart } from '@/lib/cart';
 
 interface PDPInfoProps {
   product: StaticProduct;
@@ -12,6 +11,31 @@ interface PDPInfoProps {
 
 export function PDPInfo({ product }: PDPInfoProps) {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
+  const [error, setError] = useState<boolean>(false);
+  const { addItem, openCart } = useCart();
+
+  const handleAddToBag = () => {
+    if (!selectedSize) {
+      setError(true);
+      return;
+    }
+
+    addItem({
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      price: product.price,
+      image: product.images[0],
+      size: selectedSize,
+    });
+
+    openCart();
+  };
+
+  const handleSizeSelect = (size: string) => {
+    setSelectedSize(size);
+    setError(false);
+  };
 
   return (
     <div className="flex flex-col w-full self-start sticky top-32">
@@ -43,10 +67,10 @@ export function PDPInfo({ product }: PDPInfoProps) {
           {product.sizes.map((size) => (
             <button
               key={size}
-              onClick={() => setSelectedSize(size)}
+              onClick={() => handleSizeSelect(size)}
               style={
                 selectedSize === size
-                  ? {
+                   ? {
                       backgroundColor: 'var(--color-text-primary)',
                       color: 'var(--color-base)',
                       borderColor: 'var(--color-text-primary)',
@@ -64,6 +88,11 @@ export function PDPInfo({ product }: PDPInfoProps) {
             </button>
           ))}
         </div>
+        {error && (
+          <p className="font-mono text-[10px] text-red-400 mt-2">
+            Select a size to continue
+          </p>
+        )}
       </div>
 
       {/* Section 3 — Add to Cart */}
@@ -71,8 +100,8 @@ export function PDPInfo({ product }: PDPInfoProps) {
         <Button 
           variant="primary" 
           size="lg" 
-          className={cn("w-full transition-opacity duration-200", !selectedSize && "opacity-40 cursor-not-allowed")}
-          disabled={!selectedSize}
+          className="w-full"
+          onClick={handleAddToBag}
         >
           Add to Bag
         </Button>

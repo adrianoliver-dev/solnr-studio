@@ -5,10 +5,13 @@ import Link from "next/link";
 import { Search, User, ShoppingBag, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
 import { motion, AnimatePresence } from "motion/react";
+import { useCart } from "@/lib/cart";
+import { CartDrawer } from "@/components/storefront";
 
 export default function NavbarClient() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openCart, itemCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,11 +76,16 @@ export default function NavbarClient() {
             >
               <User size={18} strokeWidth={1.5} />
             </Link>
-            <button className="relative text-[--color-text-secondary] transition-colors hover:text-[--color-text-primary]">
+            <button 
+              onClick={openCart}
+              className="relative text-[--color-text-secondary] transition-colors hover:text-[--color-text-primary]"
+            >
               <ShoppingBag size={18} strokeWidth={1.5} />
-              <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[--color-accent] text-[8px] font-bold text-[--color-base]">
-                0
-              </span>
+              {itemCount > 0 && (
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[--color-accent] text-[8px] font-bold text-[--color-base]">
+                  {itemCount}
+                </span>
+              )}
             </button>
             
             {/* Mobile Menu Button */}
@@ -95,6 +103,9 @@ export default function NavbarClient() {
           </div>
         </div>
       </nav>
+
+      {/* Cart Drawer */}
+      <CartDrawer />
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
@@ -119,7 +130,7 @@ export default function NavbarClient() {
               ))}
             </div>
             
-            {/* Close Button UI - Optional extra check against spec, spec says Absolute top-6 right-6 */}
+            {/* Close Button UI */}
             <button 
               className="absolute top-6 right-6 text-[--color-text-secondary] transition-colors hover:text-[--color-text-primary]"
               onClick={closeMenu}

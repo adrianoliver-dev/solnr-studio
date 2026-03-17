@@ -2,12 +2,12 @@
 
 ## Current State
 - **Date:** 2026-03-17
-- **Current Block:** B7 — About Page
+- **Current Block:** B8 — Cart & Checkout
 - **Block Status:** DONE
-- **Phase:** B1-B7 100% complete. Editorial brand story page fully implemented.
-- **Next Action:** /startblock B8_CART_AND_CHECKOUT
+- **Phase:** B1-B8 100% complete. Global cart system with persistent drawer implemented.
+- **Next Action:** /startblock B9_CHECKOUT_FLOW
 
-## What Was Completed (B0-B4)
+## What Was Completed (B0-B8)
 - [x] Initial setup and project configuration (B0)
 - [x] Design System primitives (B1)
 - [x] Storefront Layout (B2): Navbar, Footer, Route Grouping
@@ -21,6 +21,7 @@
 - [x] Stories Editorial (B6): Static stories, list page, and custom article renderer
 - [x] B6 Fixes (B6): Functional Navbar mobile menu overlay and clickable featured story card with hover effects
 - [x] About Page (B7): Editorial brand story with scroll animations
+- [x] Cart Drawer (B8): Global context, persistent state, and high-fidelity slide-in drawer
 - [x] Maintenance: Restored corrupted agent memory files (`project-context.md`, `systemPatterns.md`)
 - [x] Maintenance: Corrected brand location in About page ("Austin, TX")
 
@@ -38,6 +39,7 @@ None.
 | B5 | Product Detail Pages | DONE | 2026-03-17 |
 | B6 | Stories / Editorial | DONE | 2026-03-17 |
 | B7 | About Page | DONE | 2026-03-17 |
+| B8 | Cart & Checkout | DONE | 2026-03-17 |
 
 ## Repo & Infrastructure
 - GitHub: https://github.com/adrianoliver-dev/solnr-studio
