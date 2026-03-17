@@ -2,16 +2,16 @@
 
 ## Current State
 - **Date:** 2026-03-17
-- **Current Block:** B1 — Design System
+- **Current Block:** B2 — Storefront Hero & Content
 - **Block Status:** DONE (2026-03-17)
-- **Phase:** B0 Foundation 100% complete. Infrastructure, configurations, and mandatory agent rules are in place.
-- **Next Action:** /startblock B1_DESIGN_SYSTEM
+- **Phase:** B1 Design System 100% complete. Primitives implemented and verified.
+- **Next Action:** /startblock B2_STOREFRONT_HERO
 
 ## What Was Completed (B0)
 - [x] Next.js 15 project initialized (package.json, tsconfig, next.config, etc.)
 - [x] Complete folder structure created (app, components, lib, types, .agent)
 - [x] .agent/rules/project-context.md — project architecture and MCP tools configured
-- [x] .agent/rules/memory-format.md — code generation rules and cn() mandate
+- [x] .agent/rules/memory-format.md — strict code generation rules and cn() mandate
 - [x] .agent/skills/startblock.md — mandatory block protocol
 - [x] .agent/skills/design-system.md — enhanced with CRAFT QA & WORLD-CLASS STANDARD
 - [x] Font variables aligned with globals.css design tokens
@@ -26,6 +26,7 @@ None.
 | Block | Name | Status | Completed |
 |-------|------|--------|-----------|
 | B0 | Foundation & Setup | DONE | 2026-03-17 |
+| B1 | Design System | DONE | 2026-03-17 |
 
 ## Repo & Infrastructure
 - GitHub: https://github.com/adrianoliver-dev/solnr-studio
