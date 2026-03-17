@@ -44,10 +44,19 @@ export function PDPInfo({ product }: PDPInfoProps) {
             <button
               key={size}
               onClick={() => setSelectedSize(size)}
-              className={cn(
-                "min-w-[48px] h-[44px] px-3 font-sans text-xs uppercase tracking-wide border transition-all duration-200 ease-[0.19, 1, 0.22, 1]",
+              style={
                 selectedSize === size
-                  ? "bg-[--color-text-primary] text-[--color-base] border-[--color-text-primary]"
+                  ? {
+                      backgroundColor: 'var(--color-text-primary)',
+                      color: 'var(--color-base)',
+                      borderColor: 'var(--color-text-primary)',
+                    }
+                  : undefined
+              }
+              className={cn(
+                "min-w-[48px] h-[44px] px-3 font-sans text-xs uppercase tracking-wide border transition-all duration-200",
+                selectedSize === size
+                  ? "border-transparent"
                   : "text-[--color-text-secondary] border-[--color-border] hover:border-[--color-text-secondary] hover:text-[--color-text-primary]"
               )}
             >
