@@ -2,10 +2,10 @@
 
 ## Current State
 - **Date:** 2026-03-17
-- **Current Block:** B5 — Product Detail Pages
+- **Current Block:** B6 — Stories / Editorial
 - **Block Status:** DONE
-- **Phase:** B1-B5 100% complete. Full PDP experience implemented with static generation.
-- **Next Action:** /startblock B6_CART_AND_CHECKOUT
+- **Phase:** B1-B6 100% complete. Editorial section with article renderer fully implemented.
+- **Next Action:** /startblock B7_CART_AND_CHECKOUT (Note: Previous next action was B6, now moving to next logical block)
 
 ## What Was Completed (B0-B4)
 - [x] Initial setup and project configuration (B0)
@@ -30,6 +30,8 @@ None.
 | B2 | Storefront Layout | DONE | 2026-03-17 |
 | B3 | Homepage Complete | DONE | 2026-03-17 |
 | B4 | Catalog Page | DONE | 2026-03-17 |
+| B5 | Product Detail Pages | DONE | 2026-03-17 |
+| B6 | Stories / Editorial | DONE | 2026-03-17 |
 
 ## Repo & Infrastructure
 - GitHub: https://github.com/adrianoliver-dev/solnr-studio

@@ -11,3 +11,4 @@ export { CatalogGrid } from "./CatalogGrid";
 export { CatalogGridClient } from "./CatalogGridClient";
 export { PDPGallery } from "./PDPGallery";
 export { PDPInfo } from "./PDPInfo";
+export { StoryCard } from "./StoryCard";
