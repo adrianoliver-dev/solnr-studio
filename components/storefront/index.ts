@@ -9,3 +9,5 @@ export { CatalogFilters } from "./CatalogFilters";
 export { CatalogFiltersMobile } from "./CatalogFiltersMobile";
 export { CatalogGrid } from "./CatalogGrid";
 export { CatalogGridClient } from "./CatalogGridClient";
+export { PDPGallery } from "./PDPGallery";
+export { PDPInfo } from "./PDPInfo";

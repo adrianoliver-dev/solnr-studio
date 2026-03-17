@@ -2,10 +2,10 @@
 
 ## Current State
 - **Date:** 2026-03-17
-- **Current Block:** B4 — Catalog Page
+- **Current Block:** B5 — Product Detail Pages
 - **Block Status:** DONE
-- **Phase:** B1-B4 100% complete. Catalog browsing implemented with URL state.
-- **Next Action:** /startblock B5_PRODUCT_DETAIL_PAGES
+- **Phase:** B1-B5 100% complete. Full PDP experience implemented with static generation.
+- **Next Action:** /startblock B6_CART_AND_CHECKOUT
 
 ## What Was Completed (B0-B4)
 - [x] Initial setup and project configuration (B0)
